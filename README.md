@@ -1,6 +1,19 @@
 # Pi Hole
 To install Pihole you need to install nginx and docker compose. Then create cert files for nginx to run it on ssl.
 
+## Requirements
+This re	quires Docker and NGinx to be installed.
+
+```bash
+# Nginx
+sudo apt install -y nginx
+
+# Docker
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+sudo usermod -aG docker $USER
+```
+
 ## Installation
 Expecting you have installed docker with docker compose and nginx.
 
